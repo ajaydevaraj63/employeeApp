@@ -23,7 +23,7 @@ const ins=()=>{
 
     
     <div> <Nav/><div class="container">
-    <div class="row">
+<form>    <div class="row">
           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div class="row g-3">
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -55,14 +55,14 @@ const ins=()=>{
                         <input type="text" class="form-control"onChange={(e)=>{setEmpmail(e.target.value)}}/>
                       </div>
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <input type="button" value="clear" class="btn btn-dark" />
+                            <button  class="btn btn-dark" type='reset'>clear</button>
                       </div>
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <input type="button" value="register" class="btn btn-dark" onClick={ins}/>
                       </div>
                 </div>
           </div>
-    </div>
+    </div></form>
 
 
     <table class="table">
