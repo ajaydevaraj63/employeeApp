@@ -10,19 +10,25 @@ const Empregister = () => {
       var[empmail,setEmpmail]=useState("")
       var[empdob,setEmpdob]=useState("")
       const[list,setlist]=useState([])
+      
 const ins=()=>{
     
       const data={empid,empdesg,empname,empsal,cmpname,empmail,empdob}
     setlist((ls)=>[...ls,data])
+    
 }
   return (
+ 
+          
+
+    
     <div> <Nav/><div class="container">
     <div class="row">
           <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <div class="row g-3">
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label for="" class="form-label"><b>Employee id</b></label>
-                            <input type="text" class="form-control" onChange={(e)=>{setEmpid(e.target.value)}}/>
+                            <input type="text"  class="form-control" onChange={(e)=>{setEmpid(e.target.value)}}/>
                       </div>
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label"><b>Employee name</b></label>
@@ -49,7 +55,7 @@ const ins=()=>{
                         <input type="text" class="form-control"onChange={(e)=>{setEmpmail(e.target.value)}}/>
                       </div>
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <input type="button" value="clear" class="btn btn-dark"/>
+                            <input type="button" value="clear" class="btn btn-dark" />
                       </div>
                       <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                         <input type="button" value="register" class="btn btn-dark" onClick={ins}/>
